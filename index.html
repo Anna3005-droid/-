@@ -91,6 +91,23 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 
+/* device mockups: laptop + phone with slowly scrolling site screenshots */
+.mk-stage{position:relative;max-width:1000px;margin:24px auto 0;padding:0 0 6%}
+.mk-laptop{width:84%}
+.mk-lid{background:#1c1a22;border-radius:18px 18px 4px 4px;padding:2.2% 2.2% 2.6%;box-shadow:0 30px 60px rgba(63,38,51,.22)}
+.mk-screen{position:relative;overflow:hidden;background:#fff}
+.mk-laptop .mk-screen{aspect-ratio:16/10;border-radius:4px}
+.mk-base{position:relative;width:114%;margin-left:-7%;height:clamp(10px,1.7vw,20px);background:linear-gradient(#e4e0ea,#b7b2c1);border-radius:0 0 16px 16px}
+.mk-base::before{content:"";position:absolute;left:50%;top:0;width:14%;height:40%;translate:-50% 0;background:#a29cad;border-radius:0 0 8px 8px}
+.mk-phone{position:absolute;right:0;bottom:0;width:23%;background:#14121a;border-radius:14%/6.6%;padding:2.1%;box-shadow:0 26px 50px rgba(63,38,51,.32)}
+.mk-phone .mk-screen{aspect-ratio:9/19.5;border-radius:11%/5.2%}
+.mk-phone .mk-screen::before{content:"";position:absolute;z-index:1;left:50%;top:2.2%;width:30%;height:3.2%;translate:-50% 0;background:#14121a;border-radius:999px}
+.mk-scroll{width:100%;height:100%;object-fit:cover;object-position:50% 0%;display:block;animation:mkScroll 60s ease-in-out infinite}
+.mk-slow{animation-duration:46s}
+.mk-stage:hover .mk-scroll{animation-play-state:paused}
+@keyframes mkScroll{0%,6%{object-position:50% 0%}47%,53%{object-position:50% 100%}94%,100%{object-position:50% 0%}}
+@media (max-width:640px){.mk-laptop{width:92%}.mk-phone{width:30%}}
+
 </style>
 </head>
 <body>
@@ -336,8 +353,18 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 </div>
 </div>
 <div style="margin-top:64px;font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)">Приклади робіт</div>
-<div class="reveal-img" style="margin-top:20px;background:var(--paper);border-radius:24px;padding:clamp(10px,1.6vw,18px);box-sizing:border-box;max-width:980px">
-<video src="video/websites-showcase.mp4" aria-label="Приклади сайтів на ноутбуці, планшеті й телефоні" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" style="width:100%;height:auto;max-height:80vh;object-fit:contain;border-radius:16px;display:block;background:var(--paper)"></video>
+<div class="mk-stage reveal-img">
+<div class="mk-laptop">
+<div class="mk-lid"><div class="mk-screen"><img class="mk-scroll mk-slow" src="images/site-svitlana.jpg" alt="Сайт «Смаколики від Світланки» на ноутбуці" loading="lazy" decoding="async"></div></div>
+<div class="mk-base"></div>
+</div>
+<div class="mk-phone">
+<div class="mk-screen"><img class="mk-scroll" src="images/site-aliona.jpg" alt="Сайт майстра манікюру Альони на телефоні" loading="lazy" decoding="async"></div>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:40px">
+<a class="btn" href="https://svitlanka-sweet-cake.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Смаколики від Світланки ↗</a>
+<a class="btn" href="https://aliona-nails-volochysk.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Альона · манікюр ↗</a>
 </div>
 <div class="reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;margin-top:64px">
 <p style="margin:0;font-size:clamp(26px,3.8vw,44px);font-weight:500;letter-spacing:.06em;line-height:1.25;color:var(--ink-deep)">Від ідеї до вашого сайту в інтернеті</p>
