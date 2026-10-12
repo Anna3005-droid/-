@@ -1,0 +1,4 @@
+{
+  "rewrites": [{ "source": "/qr", "destination": "/index.html" }],
+  "redirects": [{ "source": "/index-1.html", "destination": "/", "permanent": true }]
+}
