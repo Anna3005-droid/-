@@ -106,9 +106,8 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 .mk-slow{animation-duration:46s}
 .mk-stage:hover .mk-scroll{animation-play-state:paused}
 @keyframes mkScroll{0%,6%{object-position:50% 0%}47%,53%{object-position:50% 100%}94%,100%{object-position:50% 0%}}
-.mk-flip{margin-top:56px}
-.mk-flip .mk-laptop{margin-left:auto}
-.mk-flip .mk-phone{right:auto;left:0}
+.mk-solo{margin-top:56px;padding:0}
+.mk-solo .mk-phone{position:relative;margin:0 auto;width:min(230px,56%)}
 @media (max-width:640px){.mk-laptop{width:92%}.mk-phone{width:30%}}
 
 </style>
@@ -365,11 +364,7 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 <div class="mk-screen"><img class="mk-scroll" src="images/site-aliona.jpg" alt="Сайт майстра манікюру Альони на телефоні" loading="lazy" decoding="async"></div>
 </div>
 </div>
-<div class="mk-stage mk-flip reveal-img">
-<div class="mk-laptop">
-<div class="mk-lid"><div class="mk-screen"><img class="mk-scroll mk-slow" src="images/site-dmytro.jpg" alt="Сайт автоелектрика Дмитра Видиша на ноутбуці" loading="lazy" decoding="async"></div></div>
-<div class="mk-base"></div>
-</div>
+<div class="mk-stage mk-solo reveal-img">
 <div class="mk-phone">
 <div class="mk-screen"><img class="mk-scroll" src="images/site-dmytro-mobile.jpg" alt="Сайт автоелектрика Дмитра Видиша на телефоні" loading="lazy" decoding="async"></div>
 </div>
