@@ -107,6 +107,9 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 .mk-stage:hover .mk-scroll{animation-play-state:paused}
 @keyframes mkScroll{0%,6%{object-position:50% 0%}47%,53%{object-position:50% 100%}94%,100%{object-position:50% 0%}}
 .mk-solo{margin-top:56px;padding:0}
+.mk-duo{display:flex;flex-wrap:wrap;justify-content:center;gap:40px 72px;margin-top:56px}
+.mk-duo .mk-solo{margin:0;flex:0 1 230px}
+.mk-duo .mk-solo .mk-phone{width:100%}
 .mk-solo .mk-phone{position:relative;margin:0 auto;width:min(230px,56%)}
 @media (max-width:640px){.mk-laptop{width:92%}.mk-phone{width:30%}}
 
@@ -127,7 +130,6 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 <a href="#work" style="text-decoration:none">Роботи</a>
 <a href="#case" style="text-decoration:none">Кейс</a>
 <a href="#websites" style="text-decoration:none">Сайти</a>
-<a href="#apps" style="text-decoration:none">Трекери</a>
 <a class="btn" href="https://t.me/ania_mits" style="text-decoration:none;background:var(--accent);color:var(--paper);padding:12px 22px;border-radius:999px;font-weight:600">Telegram</a>
 </div>
 </nav>
@@ -365,54 +367,28 @@ header nav a[href^="#"]:not([href="#top"]):not(.btn):hover{background-size:100% 
 <div class="mk-screen"><img class="mk-scroll" src="images/site-aliona.jpg" alt="Сайт майстра манікюру Альони на телефоні" loading="lazy" decoding="async"></div>
 </div>
 </div>
+<div class="mk-duo">
 <div class="mk-stage mk-solo reveal-img">
 <div class="mk-phone">
 <div class="mk-screen"><img class="mk-scroll" src="images/site-dmytro-mobile.jpg" alt="Сайт автоелектрика Дмитра Видиша на телефоні" loading="lazy" decoding="async"></div>
 </div>
 </div>
+<div class="mk-stage mk-solo reveal-img">
+<div class="mk-phone">
+<div class="mk-screen"><img class="mk-scroll" src="images/site-tracker-mobile.jpg" alt="Трекер марафону схуднення healthy emaciation на телефоні" loading="lazy" decoding="async"></div>
+</div>
+</div>
+</div>
+<p class="reveal" style="margin:40px 0 0;font-size:clamp(16px,1.8vw,19px);line-height:1.7;font-weight:500;letter-spacing:.03em;color:var(--ink)"><strong style="color:var(--ink-deep)">Кейс: трекер марафону схуднення.</strong> Веб-застосунок з реєстрацією, тренуваннями, водою, кроками і книгою рецептів.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:40px">
 <a class="btn" href="https://svitlanka-sweet-cake.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Смаколики від Світланки ↗</a>
 <a class="btn" href="https://aliona-nails-volochysk.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Альона · манікюр ↗</a>
 <a class="btn" href="https://vydysh-avtoelektryk.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Дмитро · автоелектрик ↗</a>
+<a class="btn" href="https://healthy-emaciation.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Трекер марафону ↗</a>
 </div>
 <div class="reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;margin-top:64px">
 <p style="margin:0;font-size:clamp(26px,3.8vw,44px);font-weight:500;letter-spacing:.06em;line-height:1.25;color:var(--ink-deep)">Від ідеї до вашого сайту в інтернеті</p>
 <a class="btn" href="https://t.me/ania_mits" style="text-decoration:none;background:var(--accent);color:var(--paper);padding:16px 30px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Замовити сайт</a>
-</div>
-</div>
-</section>
-
-<!-- APPS -->
-<section id="apps" style="background:var(--lilac);padding:96px 24px">
-<div style="max-width:1200px;margin:0 auto">
-<div style="font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">Кейс · веб-застосунок</div>
-<h2 class="reveal" style="display:inline-block;margin:0;background:var(--paper);color:var(--plum);padding:14px 30px;border-radius:18px;font-size:clamp(22px,3.2vw,36px);font-weight:700;letter-spacing:.04em;line-height:1.35">Трекер марафону схуднення healthy emaciation</h2>
-<div style="display:flex;flex-wrap:wrap;gap:24px 64px;margin-top:48px;align-items:flex-start">
-<p style="flex:1 1 360px;margin:0;font-size:clamp(18px,2vw,22px);line-height:1.6;font-weight:700;letter-spacing:.03em;color:var(--ink-deep)">Особистий кабінет учасниці марафону: тренування, вода, кроки, харчування і книга рецептів в одному місці.</p>
-<p style="flex:1 1 360px;margin:0;font-size:clamp(16px,1.8vw,19px);line-height:1.7;font-weight:500;letter-spacing:.03em;color:var(--ink)">Від фірмового стилю до готового застосунку, який учасниці відкривають з телефона чи комп’ютера під своєю поштою.</p>
-</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:40px">
-<div class="reveal" style="background:var(--paper);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:4px;color:var(--ink-deep)"><span style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:.02em;color:var(--plum)">35</span><span style="font-size:14px;letter-spacing:.06em;line-height:1.5">днів марафону</span></div><div class="reveal" style="background:var(--paper);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:4px;color:var(--ink-deep)"><span style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:.02em;color:var(--plum)">24</span><span style="font-size:14px;letter-spacing:.06em;line-height:1.5">тренування за графіком 2+1</span></div><div class="reveal" style="background:var(--paper);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:4px;color:var(--ink-deep)"><span style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:.02em;color:var(--plum)">296</span><span style="font-size:14px;letter-spacing:.06em;line-height:1.5">рецептів з порцією під план</span></div><div class="reveal" style="background:var(--paper);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:4px;color:var(--ink-deep)"><span style="font-size:clamp(28px,3.4vw,40px);font-weight:700;letter-spacing:.02em;color:var(--plum)">4</span><span style="font-size:14px;letter-spacing:.06em;line-height:1.5">плани калорій: 1300–1900</span></div>
-</div>
-<div class="reveal" style="background:var(--paper);border-radius:22px;padding:36px 32px;margin-top:24px;max-width:860px;box-sizing:border-box">
-<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:22px;font-size:16px;line-height:1.7;letter-spacing:.02em">
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Дизайн у стилі бренду:</strong> кольори, шрифти й рамки перенесені з книги рецептів марафону, лого, превʼю для Telegram.</span></li>
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Реєстрація з поштою:</strong> відмітки зберігаються в акаунті й синхронізуються між телефоном і комп’ютером.</span></li>
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Щоденні відмітки:</strong> вода склянками, тренування з вибором комплексу, кроки з телефона чи браслета, чотири прийоми їжі.</span></li>
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Книга рецептів:</strong> пошук і фільтри, порція кожної страви під план калорій учасниці, можна додати й свою страву з ккал.</span></li>
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Прогрес і застосунок на телефоні:</strong> календар 35 днів, серія тренувань, вага; трекер встановлюється на головний екран зі значком.</span></li>
-<li style="display:flex;gap:14px"><span style="flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:11px"></span><span><strong>Інструкція для учасниць:</strong> презентація з екранами, як користуватися трекером.</span></li>
-</ul>
-</div>
-<div class="phones" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-top:48px;justify-items:center">
-<img loading="lazy" decoding="async" class="shot reveal-img" src="images/tracker-today.jpg" alt="Трекер марафону: екран «Сьогодні» з днями й водою" style="width:100%;max-width:240px;aspect-ratio:324/700;object-fit:cover;object-position:top;border:7px solid var(--phone);border-radius:30px;display:block;box-sizing:border-box;background:var(--phone)">
-<img loading="lazy" decoding="async" class="shot reveal-img" src="images/tracker-food.jpg" alt="Трекер марафону: харчування зі страв книги і своєю стравою" style="width:100%;max-width:240px;aspect-ratio:324/700;object-fit:cover;object-position:top;border:7px solid var(--phone);border-radius:30px;display:block;box-sizing:border-box;background:var(--phone)">
-<img loading="lazy" decoding="async" class="shot reveal-img" src="images/tracker-recipe.jpg" alt="Трекер марафону: рецепт із порціями за планом калорій" style="width:100%;max-width:240px;aspect-ratio:324/700;object-fit:cover;object-position:top;border:7px solid var(--phone);border-radius:30px;display:block;box-sizing:border-box;background:var(--phone)">
-<img loading="lazy" decoding="async" class="shot reveal-img" src="images/tracker-progress.jpg" alt="Трекер марафону: прогрес за 35 днів" style="width:100%;max-width:240px;aspect-ratio:324/700;object-fit:cover;object-position:top;border:7px solid var(--phone);border-radius:30px;display:block;box-sizing:border-box;background:var(--phone)">
-</div>
-<div class="reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;margin-top:64px">
-<a class="btn" href="https://healthy-emaciation.vercel.app" target="_blank" rel="noopener" style="text-decoration:none;border:1.5px solid var(--accent);color:var(--accent);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Відкрити трекер ↗</a>
-<a class="btn" href="https://t.me/ania_mits" style="text-decoration:none;background:var(--accent);color:var(--paper);padding:16px 30px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.04em">Хочу такий трекер</a>
 </div>
 </div>
 </section>
